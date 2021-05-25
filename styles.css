@@ -1,0 +1,105 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--very-light-gray);
+  display: grid;
+  place-items: center;
+  line-height: 1.7rem;
+  color: var(--transparent-white);
+}
+
+main {
+  margin: 2rem 1rem;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.component {
+  padding: 2rem 3.5rem;
+}
+
+.component:nth-of-type(1) {
+  background: var(--bright-orange);
+}
+.component:nth-of-type(1) button {
+  color: var(--bright-orange);
+}
+.component:nth-of-type(1) button:hover {
+  color: var(--transparent-white);
+  background: var(--bright-orange);
+}
+
+.component:nth-of-type(2) {
+  background: var(--dark-cyan);
+}
+.component:nth-of-type(2) button {
+  color: var(--dark-cyan);
+}
+.component:nth-of-type(2) button:hover {
+  color: var(--transparent-white);
+  background: var(--dark-cyan);
+}
+
+.component:nth-of-type(3) {
+  background: var(--very-dark-cyan);
+}
+.component:nth-of-type(3) button {
+  color: var(--very-dark-cyan);
+}
+.component:nth-of-type(3) button:hover {
+  color: var(--transparent-white);
+  background: var(--very-dark-cyan);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+button {
+  border-radius: 1.5rem;
+  padding: 0.9rem 2.3rem;
+  margin-top: 0.8rem;
+  border: 2px solid var(--transparent-white);
+  background-color: var(--very-light-gray);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    width: 50%;
+    min-width: 780px;
+    height: 70%;
+    min-height: 450px;
+  }
+  .component {
+    position: relative;
+  }
+  button {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
