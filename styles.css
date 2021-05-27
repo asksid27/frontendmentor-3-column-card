@@ -90,7 +90,7 @@ button {
 @media (min-width: 800px) {
   main {
     display: flex;
-    width: 50%;
+    width: 60%;
     min-width: 780px;
     height: 70%;
     min-height: 450px;
